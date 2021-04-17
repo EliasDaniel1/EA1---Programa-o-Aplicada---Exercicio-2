@@ -1,5 +1,16 @@
 #include <iostream>
+#include <string>
+
+using namespace std;
 
 int main() {
-  std::cout << "Hello World!\n";
+  string palavra;
+
+  cout << "Digite uma palavra:" << endl;
+  cin >> palavra;
+
+  for(int i = 0; i < palavra.size(); i++)
+  {
+    cout << palavra[i] << endl;
+  }
 }
