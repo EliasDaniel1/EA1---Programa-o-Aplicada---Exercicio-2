@@ -18,7 +18,7 @@ char teclado[numeros][posicoes] = {
 	{'w', 'x', 'y', 'z'}
 };
 
-
+void leitura(char letra);
 
 int main() {
  char palavra_P[50];
@@ -33,6 +33,16 @@ if(palavra.length() <= 50)
   
 }
 
+void leitura(char letra){
+  for(int i=0; i < numeros; i++){
+    for(int j=0; j < posicoes; j++){
+      if(teclado[i][j] == letra)
+      {
+        cout << "#" << i + 1 << "=" << j + 1 << endl;
+      }
+    }
+  }
+}
 
   
   
